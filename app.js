@@ -9,7 +9,7 @@ const parser = new parsers.Readline({
     delimiter: '\r\n'
 });
 
-var port = new SerialPort('/dev/cu.usbmodem1101', {
+var port = new SerialPort('/dev/cu.usbmodem1401', {
     baudRate: 9600,
     dataBits: 8,
     parity: 'none',
@@ -37,7 +37,6 @@ parser.on('data', function(data) {
     console.log('Received data from port: ' + data);
     io.emit('data', data);
 });
-
-server.listen(3001, function() {
+server.listen(3000, function() {
     console.log('Server is running on port 3000');
 });

@@ -23,12 +23,14 @@ h3 {
 .btn {
     background: #f05462;
     color: white;
+    border-radius: 20px;
     padding: 5px 10px;
     text-align: center;
 }
 .btn:hover {
     color: #f05462;
     background: white;
+    border-radius: 20px;
     padding: 3px 8px;
     border: 2px solid #f05462;
 }
@@ -76,6 +78,7 @@ td {
     position: absolute;
     right: 0;
     width: 80vw;
+    border-radius: 20px;
     height: 100vh;
     background: #f1f1f1;
 }
@@ -155,6 +158,7 @@ td {
 }
 .container .content .cards {
     padding: 20px 15px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
